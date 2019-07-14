@@ -38,7 +38,7 @@ public class LocatorsInSelenium {
         driver.findElement(By.cssSelector("#edit-submitted-time-hour")).sendKeys("7");
         Thread.sleep(1000);
 
-        // CSS selector locator - selecting an class
+        // CSS selector locator - selecting a class
         driver.findElement(By.cssSelector(".minute")).sendKeys("30");
         Thread.sleep(1000);
 
@@ -68,6 +68,7 @@ public class LocatorsInSelenium {
     public static void clickDone(WebDriver driver) throws InterruptedException {
         Thread.sleep(2000);
         driver.findElement(By.className("webform-submit")).click();
+        Thread.sleep(1500);
     }
     
 }
